@@ -1,0 +1,200 @@
+.logo{
+    height: 50px;/*yükseklik ve genişliği ver yoksa değişmiyor*/
+    width: 300px;
+    margin-left: 35px;
+}
+.ayrac{
+font-size: 20px;
+margin: 0px 20px; /*sağdansoldan20px*/
+color: aliceblue;
+
+
+}
+.nav-bg{
+
+    background-color: rgba(172, 172, 172, 0.595);
+}
+.header-yuk{
+    height: calc(50vh - 70px);
+
+}
+.sayfa-baslik h3{
+    color: #f4b70b;
+    font-weight: bold;
+}
+.sayfa-baslik p{
+    color: aliceblue;
+    font-weight: bold;
+}
+.ust-kisim{
+    background-image:url(resimler/ust-bg.jpg);
+    height:100vh ;/*yükseklik verilmezse gözükmez tam ekran olması için 100vh verdik*/
+    width:100%;
+    background-size: cover;/*ana çerçeveye oturmasını sağlar*/
+    background-position: center center;/*x ve y göre tam ortadan resimi sayfaya ortalar*/
+    background-repeat: none;
+    background-attachment: fixed;/*resim sayfa kaydırılsa bile sabit şekilde durur*/
+}
+
+.ust-kisim-sayfalar{
+    background-image:url(resimler/ust-bg-2.jpg);
+    height:50vh ;/*yükseklik verilmezse gözükmez tam ekran olması için 50vh verdik.resmin yüzde 50sini alır*/
+    width:100% ;
+    background-size: cover;/*ana çerçeveye oturmasını sağlar*/
+    background-position: center center;/*x ve y göre tam ortadan resimi sayfaya ortalar*/
+    background-repeat: none;
+    background-attachment: fixed;/*resim sayfa kaydırılsa bile sabit şekilde durur*/
+}
+.nav-item a {/*nav-item içindeki a etiketleri etkilenir*/
+    color:aliceblue;
+    font-size: 16px;
+    font-weight: bold;
+}
+.nav-item a:hover{
+   color:black;
+}
+.navbar-toggler{/*hamburger menü butonunun kenarları sarı olur*/
+    color:#f4b70b;
+    border: 1px solid #f4b70b;
+
+}
+.navbar-toggler:hover{
+    border: none;
+  }
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+ @media screen and (max-width:992px){/*992 boyutu altına düştüğünde ayraçlar gözükmeyecek  */
+  .ayrac{display: none;}
+  
+  .nav-item:hover{
+    background-color:#f4b70b;
+  }
+  .navbar-toggler{/*hamburger menunun mobil ekranda görünür olması için,en üstte kalması için z-index:999 yapıldı */
+    z-index: 999;
+    position: fixed;
+    right: 10px;
+    top: 20px;
+    
+
+  }
+  .navbar-toggler:hover{
+    border: 1px solid black;
+  }
+  
+  .pozisyon{
+    width: 100%;
+    height: 100vh;
+    background-color: #f4b70b;
+    position: fixed;
+    z-index: 1;
+    top:0;/*hamurger menunun mıbil ekranda sayfanın tamamını kaplaması için top 0 verildi*/
+    left: 0;
+    padding-top: 70px;/*hamburger menunun menu maddelerinin yanyana başlamaması için alta inmesi içindir*/
+  }
+}
+.bosluk{
+    margin-top: 100px;
+}
+
+/*TEKLİF KISMI*/
+.teklif{ /*col kısmının yüksekliğini arttırır*/
+    height: 60px;
+}
+.tirnak{
+ color: #f4b70b;
+font-size: 36px;
+font-weight: bold;
+
+}
+.imza{
+ font-size:30px; ;
+}
+
+/*Hizmetlerimiz kısmı*/
+.hizmetlerimiz{
+    background-color: #f4b70b;
+}
+
+/*Çalışanlar*/
+
+/* .calisan{      burada (yanyana dizilen ögelerde)responsive yaparken genişlik vermemeliyiz
+    width:200px;
+} */
+
+
+
+/*slogan*/
+.tirnak1{
+    color: #f4b70b;
+   font-size: 52px;
+   font-weight: bold;
+   
+   }
+.soz{
+    font-size: 40px;
+    color: aliceblue;
+}
+
+
+.slogan{
+    background-image:url(resimler/ust-bg.jpg);
+    
+    
+    background-size: cover;/*ana çerçeveye oturmasını sağlar*/
+    background-position: center center;/*x ve y göre tam ortadan resimi sayfaya ortalar,orta noktaya odaklar*/
+    background-repeat: none;
+    background-attachment: fixed;/*resim sayfa kaydırılsa bile sabit şekilde durur*/
+   
+
+}
+.rocket-icon{
+    font-size: 150px;
+    color:aliceblue;
+}
+/*çalışma*/
+.calisma{
+    padding: 5px;
+    border:1px solid transparent;
+    
+
+}
+.calisma:hover{
+    border: 1px solid gray;
+    cursor:pointer;/*resmin üzerine gelindiğinde aktif hale gelir*/
+}
+.calisma img{
+height: 150px;
+
+}
+.footer{
+    background-color: #f4b70b;
+    height: 300px;
+    color: aliceblue;
+    
+}
+footer p{
+    font-size: 18px;
+}
+.footer-sutun{
+    height: 300px;
+}
+.boyut{
+    height: 200px;
+    width: 200px;
+}
+/*portfoy sayfası*/
+.kurumsal-calisma{
+    height: 150px;
+}
+/*blog sayfası*/
+
+.devam a:hover{
+   color: black!important;
+}
+/*iletişim sayfası*/
+.simgeler{
+    font-size: 16px;
+
+}

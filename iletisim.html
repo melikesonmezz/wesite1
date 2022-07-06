@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--responsive olması için yazılır-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="stil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"  />
+    <script src="bootstrap.js"></script>
+    
+</head>
+<body>
+  
+    <div class="ust-kisim-sayfalar">
+        <nav class="navbar navbar-expand-lg nav-bg">
+            <!-- <div class="container p-0">yan boşlukları kaldırmak için padding verdik -->
+              <a class="navbar-brand" href="index.html"><img class="img-fluid logo"   src="resimler/logo.png" alt="" ></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class=" navbar-nav ms-auto mb-2 mb-lg-0 pozisyon">
+                  <li class="nav-item d-flex align-items-center p-2">
+                    <a class="nav-link active" aria-current="page" href="hakkimizda.html">Hakkımızda</a>
+                    <span class="ayrac">|</span>
+                  </li>
+                  <li class="nav-item d-flex align-items-center p-2">
+                    <a class="nav-link active" aria-current="page" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                    <span class="ayrac">|</span>
+                </li>
+                  <li class="nav-item d-flex align-items-center p-2">
+                  
+                    <a class="nav-link active" aria-current="page" href="portfoy.html">Portföyümüz</a>
+                    <span class="ayrac">|</span>
+                </li>
+                  <li class="nav-item d-flex align-items-center p-2">
+                    <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                    <span class="ayrac">|</span>
+                </li>
+                  <li class="nav-item d-flex align-items-center p-2">
+                    <a class="nav-link active" aria-current="page" href="iletişim.html">İletişim</a>
+                  </li>
+                  
+                  
+                  
+                </ul>
+               
+              </div>
+    
+        </nav>
+        <!--ortadaki yazı kısmı-->
+        <div class="container">
+          <div class="row ">
+            <div class="col-md-12 d-flex align-items-center header-yuk"><!--col-md-12'nin yüksekliği belli olmazsa  align-items-center işe yaramaz-->
+             <img src="resimler/logo-2.png" class="img-fluid " alt=""/>
+            
+              <div class="sayfa-baslik ms-4">
+                  <h3>İLETİŞİM</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, possimus.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="p-0 m-0" >İletişim Formu</h4>
+          <hr/>
+           <form action="">
+            <div class="mb-3">
+              <label for="adSoyad" class="form-label">Adı Soyadı</label><!--label for ve input etiketindeki id kısımları aynı verilirse labela tıklandığında ad soyad kutusu aktif olur-->
+              <input type="text" class="form-control" id="adSoyad" placeholder="Adınız ve Soyadınız">
+            </div>
+            <div class="mb-3">
+              <label for="eMail" class="form-label">Email addres</label>
+              <input type="email" class="form-control" id="eMail" placeholder="Email Adresiniz">
+            </div>
+            <div class="mb-3">
+              <label for="konu" class="form-label">Konu</label>
+              <select class="form-select" id="konu" aria-label="Default select example">
+                <option selected>Teklif Alma</option>
+                <option value="1">Bilgi Edinme</option>
+                <option value="2">Muhasebe</option>
+                <option value="3">Bilgi İşlem</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="mesaj" class="form-label">Mesaj</label>
+              <textarea class="form-control" id="mesaj" rows="3"></textarea>
+            </div>
+           <div class="mb-3">
+            <button clas="btn btn-success btn-lg"><i class="fa-solid fa-bars-staggered me-2 simgeler"></i><i class="fa-solid fa-envelope me-2 simgeler"></i>Gönder</button>
+           </div>
+
+           </form>
+
+        </div>
+        <div class="col-md-6">
+          <img src="resimler/iletisim.png" class="img-fluid" alt="">
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <i class="fa-solid fa-location-dot me-2"></i>
+          <h4>Adres</h4>
+          <hr/>
+          <p>Lorem ipsum dolor sit amet
+             consectetur adipisicing elit.
+              Voluptatibus sint dignissimos ipsum
+               assumenda molestiae minus.
+                Veritatis quas ut assumenda 
+                consequuntur.</p>
+
+          <i class="fa-solid fa-phone me-2"></i>
+          <h4>Telefon</h4>
+          <hr/>
+          <p>0212888785</p>
+
+          
+
+         <i class="fa-solid fa-envelope me-2"></i><h4>Email</h4>
+          <hr/>
+          <p>bilisimteknoloji7474@gmail.com</p>
+
+        </div>
+        <div class="col-md-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385396.60596766684!2d29.01217945!3d41.0053215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1657084408322!5m2!1str!2str" height="450px" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+   
+   
+
+<div class="container-fluid footer">
+ <div class="row">
+  <div class="col-md-12 footer-sutun d-flex flex-column justify-content-center align-items-center">
+   <div class="icons">
+    <i class="fa-brands fa-instagram-square fa-3x me-2"></i>
+    <i class="fa-brands fa-facebook fa-3x me-2"></i>
+    <i class="fa-brands fa-twitter-square fa-3x me-2"></i>
+    <i class="fa-brands fa-youtube fa-3x me-2"></i>
+    <p class="mt-3">@ copyright 2022 Tüm hakları saklıdır</p>
+    <p>Tasarım Bilişim Teknoloji</p>
+   </div>
+
+  </div>
+ </div>
+
+
+</div>
+
+
+      
+</body>
+</html>
